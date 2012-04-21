@@ -1,4 +1,4 @@
-## Luden Dare 23: Tiny World in 48 hours
+## Ludum Dare 23: Tiny World in 48 hours
 
 My entry for LD23.
 
