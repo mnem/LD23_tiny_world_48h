@@ -1,0 +1,1112 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dir",
+				"dirname"
+			],
+			[
+				"lin",
+				"line_count"
+			],
+			[
+				"lines",
+				"lines_height"
+			],
+			[
+				"for",
+				"fora	Array Comprehension"
+			],
+			[
+				"fil",
+				"fillStyle"
+			],
+			[
+				"split",
+				"split_style"
+			],
+			[
+				"sub",
+				"subvalue"
+			],
+			[
+				"outp",
+				"output_canvas"
+			],
+			[
+				"fun",
+				"function	function"
+			],
+			[
+				"lo",
+				"love.draw"
+			],
+			[
+				"dr",
+				"love.graphics.draw"
+			],
+			[
+				"gra",
+				"love.graphics.newImage"
+			],
+			[
+				"_min",
+				"_min_max_sample_range"
+			],
+			[
+				"el",
+				"elapsed"
+			],
+			[
+				"_s",
+				"_next_sample_index"
+			],
+			[
+				"sample",
+				"sample_total"
+			],
+			[
+				"avia",
+				"available_file_list"
+			],
+			[
+				"com",
+				"compile_fragment"
+			],
+			[
+				"try",
+				"try_start"
+			],
+			[
+				"mod",
+				"modules_loaded"
+			],
+			[
+				"mouse",
+				"love.mouse.getX"
+			],
+			[
+				"fn",
+				"function	function"
+			],
+			[
+				"love",
+				"love.load"
+			],
+			[
+				"on",
+				"onComplete"
+			],
+			[
+				"ima",
+				"image_path"
+			],
+			[
+				"HV",
+				"HV_ADMIN_SECRET"
+			],
+			[
+				"user",
+				"user_exists"
+			],
+			[
+				"base",
+				"base_uri"
+			],
+			[
+				"Bad",
+				"BadgeCategory"
+			],
+			[
+				"CAIRO",
+				"CAIRO_INCLUDES"
+			],
+			[
+				"show",
+				"showFile"
+			],
+			[
+				"par",
+				"parts"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"ass",
+				"asset_filename"
+			],
+			[
+				"assem",
+				"assemble_list"
+			],
+			[
+				"source",
+				"source_dir"
+			],
+			[
+				"categor",
+				"category"
+			],
+			[
+				"ct",
+				"categories"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"Image",
+				"ImageComposite"
+			],
+			[
+				"Imag",
+				"ImageComposite"
+			],
+			[
+				"sha",
+				"shadingCanvas"
+			],
+			[
+				"sel",
+				"selectedCat"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"pot",
+				"potato_builder"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"stac",
+				"stackx_hidden"
+			],
+			[
+				"apple",
+				"appledoc_behavior"
+			],
+			[
+				"cre",
+				"create_user"
+			],
+			[
+				"chap",
+				"chap-secrets"
+			],
+			[
+				"ch",
+				"check_user_does_not_already_exist"
+			],
+			[
+				"ppp",
+				"pptpd"
+			],
+			[
+				"VPN",
+				"VPN_NAME"
+			],
+			[
+				"VP",
+				"VPN_NAME"
+			],
+			[
+				"folders",
+				"folders"
+			],
+			[
+				"target",
+				"target"
+			],
+			[
+				"ou",
+				"output	<output>"
+			],
+			[
+				"else",
+				"else  (function)"
+			],
+			[
+				"folder",
+				"folder"
+			],
+			[
+				"m",
+				"mkdir  (function)"
+			],
+			[
+				"ea",
+				"each  (function)"
+			],
+			[
+				"basen",
+				"basename"
+			],
+			[
+				"basena",
+				"basename"
+			],
+			[
+				"fol",
+				"folder_map"
+			],
+			[
+				"make_fo",
+				"make_folder_name"
+			],
+			[
+				"item",
+				"item"
+			],
+			[
+				"ruby",
+				"ruby	<ruby>"
+			],
+			[
+				"Wol",
+				"World"
+			],
+			[
+				"World",
+				"MainWorld"
+			],
+			[
+				"flas",
+				"flashpunk"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"DEB",
+				"DEBUG"
+			],
+			[
+				"fla",
+				"flashpunk"
+			],
+			[
+				"Fla",
+				"flashpunk"
+			],
+			[
+				"Main",
+				"Main"
+			],
+			[
+				"fub",
+				"flashpubk"
+			],
+			[
+				"pub",
+				"public"
+			],
+			[
+				"Sp",
+				"Sprite"
+			],
+			[
+				"def",
+				"def: def … end"
+			],
+			[
+				"font",
+				"font: font-family: family"
+			],
+			[
+				"so",
+				"source_files"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"f",
+				"font: font-family: family"
+			],
+			[
+				"div",
+				"div: <div>"
+			],
+			[
+				"Di",
+				"DisplayObjectContainer"
+			],
+			[
+				"F",
+				"Foo"
+			],
+			[
+				"steve",
+				"steve"
+			],
+			[
+				"stev",
+				"steve  (variable)"
+			],
+			[
+				"ad",
+				"addChild"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 93,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"gis",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"gi",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"pub",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"op",
+				"GitHub: Open Gist in Editor"
+			],
+			[
+				"pg",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"alig",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"lis pa",
+				"Package Control: List Packages"
+			],
+			[
+				"gc",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"gius",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"sfto",
+				"SFTP: Browse Server…"
+			],
+			[
+				"cal",
+				"Calculate"
+			],
+			[
+				"ca",
+				"Calculate"
+			],
+			[
+				"pgs",
+				"GitHub: Private Gist from Selection"
+			],
+			[
+				"oge",
+				"GitHub: Open Gist in Editor"
+			],
+			[
+				"gist",
+				"GitHub: Open Gist in Editor"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"disc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"mo",
+				"Mote"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"GitHub: Open Gist in Browser"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"show",
+				"Show TODOs in project and open files"
+			],
+			[
+				"p",
+				"Package Control: Enable Package"
+			],
+			[
+				"todo",
+				"Show TODOs in project and open files"
+			],
+			[
+				"",
+				"Package Control: Discover Packages"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				":o",
+				":$ - EOF"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"po",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 162.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/.git/COMMIT_EDITMSG",
+		"/Users/mnem/Dropbox/Documents/Council tax change of address",
+		"/Volumes/huzutech_vault/core_server/web/services/asset/equip.py",
+		"/Volumes/huzutech_vault/core_server/web/services/admin/user.py",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/package.json",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/coffee/main.coffee",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/index.html",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/public/index.html",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/Rakefile",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/Procfile",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/app.js",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/.gitignore",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/js/index.js",
+		"/Users/mnem/Developer/github/mnem/kapshin_web/coffee",
+		"/Users/mnem/Developer/github/mnem/kapshin/coffee/kapshin/kapshin.coffee",
+		"/Users/mnem/Developer/github/mnem/kapshin/coffee/main.coffee",
+		"/Users/mnem/Developer/github/mnem/kapshin/README.md",
+		"/Users/mnem/Developer/github/mnem/gman/coffee/main.coffee",
+		"/Users/mnem/Developer/github/mnem/gman/coffee/kapshin/kapshin.coffee",
+		"/Users/mnem/Developer/github/mnem/gman/coffee/kapshin/styles.coffee",
+		"/Users/mnem/Desktop/fontlist-coffee.txt",
+		"/Users/mnem/Desktop/fontlist.txt",
+		"/Users/mnem/Developer/github/mnem/gman/package.json",
+		"/Users/mnem/Developer/huzutech/repositories/huru/server/twisted/plugins/login.py",
+		"/Users/mnem/Developer/huzutech/repositories/huru/server/twisted/plugins/avatar.py",
+		"/Users/mnem/Desktop/local_configuration.json",
+		"/Users/mnem/Developer/github/mnem/gman/bieber.curl",
+		"/Users/mnem/Developer/github/mnem/gman/bieber.png.curl",
+		"/Users/mnem/Developer/github/mnem/gman/fm.rb",
+		"/Users/mnem/Developer/github/mnem/gman/coffee/kapshin/prepare_image.coffee",
+		"/Users/mnem/Developer/github/mnem/gman/Rakefile",
+		"/Users/mnem/Developer/github/mnem/lef/.git/COMMIT_EDITMSG",
+		"/Users/mnem/Developer/github/mnem/lef/main.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/NAHEntityFramework.lua",
+		"/Users/mnem/Developer/github/forks/minism/SublimeLove/.git/MERGE_MSG",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/nah_ces.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/NAHEntityFramework",
+		"/Users/mnem/.ssh/config",
+		"/Users/mnem/Developer/github/collaborations/ludometrics/Cartouche/.git/COMMIT_EDITMSG",
+		"/Users/mnem/Developer/github/collaborations/ludometrics/Cartouche/.git/rebase-merge/git-rebase-todo",
+		"/Users/mnem/Developer/github/collaborations/ludometrics/Cartouche/ios/Cartouche/Cartouche/Assets/Texture/copy_retina_from_dropbox.rb",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/main.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/log.lua",
+		"/Users/mnem/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/mnecs.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_3/entity_system.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/PlayerEntity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/components/debug/Framerate.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/init.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/FieldEntity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/DebugEntity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/_imports.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/SheepEntity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/components/asteroid.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/public/js/crafty.js",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/scene_main.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/imports.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/import_modules.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/ScoreEntity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/public/js/game.js",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/components/debug/Frameratee.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/components/debug/framerate.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/player_entity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/score_entity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/coffee/entities/sheep_entity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/Rakefile",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/.git/COMMIT_EDITMSG",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/public/levels/field.json",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking_2/public/levels/field.tmx",
+		"/Users/mnem/Desktop/field.json",
+		"/Users/mnem/Desktop/fnt_caption.fnt",
+		"/Users/mnem/Desktop/fnt_caption.txt",
+		"/Users/mnem/.rvm/log/ruby-1.9.3-p125/configure.log",
+		"/Users/mnem/Users/mnem/.rvm/log/ruby-1.9.3-p125/yaml/configure.log",
+		"/Users/mnem/.rvm/log/ruby-1.9.3-p125/yaml/configure.log",
+		"/Users/mnem/.rvm/log/ruby-1.9.3-p125/patch.apply.xcode-debugopt-fix-r34840.log",
+		"/Users/mnem/.bash_profile",
+		"/Volumes/huzutech_vault/scholastic_client/client/src/scholastic/modules/personalroombuilder/controller/webservice/ProcessOwnedAssetsCommand.as",
+		"/Volumes/huzutech_vault/scholastic_client/client/lib/huzuvirtual/features/personalroom/modulefeature/model/PersonalRoomAsset.as",
+		"/Volumes/huzutech_vault/scholastic_client/client/app_horrible_application/src/scholastic/applicationfeatures/horribleconfiguration/embedded/default_personalroom.json",
+		"/Volumes/huzutech_vault/scholastic_client/client/bin/post_agile_core_resources/index.js",
+		"/Volumes/Tiled 0.8.0/examples/sewers.tmx",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entities/score_entity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/scene_main.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/components/asteroid.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entities/player_entity.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/public/js/game.js",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/components/components_creation",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/components/asteroid_component.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entity_score.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/public/js/game copy.js",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/Rakefile",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entity_player.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/init.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/public/index.html",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/init.coffeex",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/main.coffee",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/dww-flock-a/main.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/dww-flock-a/conf.lua",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/game.js",
+		"/Users/mnem/Library/Application Support/Sublime Text 2/Packages/SublimeLove/Love.sublime-build",
+		"/Users/mnem/Library/Application Support/Sublime Text 2/Packages/SublimeLove/Love.tmLanguage",
+		"/Users/mnem/Library/Application Support/Sublime Text 2/Packages/SublimeLove/package-metadata.json",
+		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/dww-flock-a/dww-flock-a.sublime-workspace",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/src/tryharder/tweetr/prototype/Main.as",
+		"/Volumes/huzutech_vault/scholastic_client/client/app_connection_check/src/scholastic/connectioncheckapplication/features/connectioncheckconfiguration/applicationfeature/ConnectionCheckConfigurationApplicationFeature.as",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/src/tryharder/tweetr/prototype/credentials.json",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/.gitignore",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/resources/tweetr-app.xml",
+		"/Volumes/huzutech_vault/mesh_mash_editor/Buildfile",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/src/tryharder/tweetr/prototype/.gitignore",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/Buildfile",
+		"/Users/mnem/Developer/github/collaborations/try-harder/tweet-harder-oauth/resources/descriptor-template.xml",
+		"/Users/mnem/Developer/github/collaborations/shepherd/README.md",
+		"/Users/mnem/Developer/github/collaborations/shepherd/.gitignore",
+		"/Users/mnem/Developer/github/collaborations/shepherd/README",
+		"/Volumes/huzutech_vault/core_server/web/services/rest.py",
+		"/Volumes/huzutech_vault/core_server/web/services/dbhost.py",
+		"/Volumes/huzutech_vault/carter/public/scripts/src/outfits_list.coffee",
+		"/Volumes/huzutech_vault/carter/public/scripts/src/huzuws.coffee",
+		"/Volumes/huzutech_vault/carter/public/scripts/src/purchase_callbacks.coffee",
+		"/Volumes/huzutech_vault/carter/public/scripts/main.js",
+		"/Volumes/huzutech_vault/carter/hv_user_admin.rb",
+		"/Volumes/huzutech_vault/carter/views/index.erb",
+		"/Volumes/huzutech_vault/carter/.env",
+		"/Volumes/huzutech_vault/duck_hunter/.git/COMMIT_EDITMSG",
+		"/Users/mnem/Developer/huzutech/repositories/duck_hunter/.git/rebase-merge/git-rebase-todo",
+		"/Volumes/huzutech_vault/duck_hunter/DuckHunter/DHOAuth2Connection.m"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Volumes/huzutech_vault/carter",
+			"/Users/mnem/.nvm/v0.6.11/lib/node/wafadmin",
+			"<open folders>",
+			"/Users/mnem/Developer/github/private/nah_octopress_source/sass",
+			"/Users/mnem/Developer/github/private/nah_octopress_source",
+			"/Volumes/huzutech_vault/scholastic_client/client/lib_core/test",
+			"/Volumes/huzutech_vault/scholastic_client",
+			"/Users/mnem/Developer/github/public/godzilla",
+			"/Users/mnem/Developer/github/public/SparrowBones/4.2",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"console.log",
+			"get_x_y_align_baseline_from_area_style",
+			", x, y",
+			":.*$",
+			"join_world",
+			"factory",
+			"get_x_y_align_baseline_from_area_style",
+			"UserLoginPlugin",
+			"ImageFac",
+			"create_sty",
+			"source.lua",
+			"ruby",
+			"addTo",
+			"add_to",
+			"add_t.",
+			"add_to",
+			"print",
+			"create",
+			"createadd_to",
+			"create",
+			"cmp_2d_mouse_cursor",
+			"cmp_2d_mouse_target",
+			"log",
+			"system_entities",
+			"create",
+			"entity_components_by_base",
+			"log",
+			"allEntities",
+			"entity_components",
+			"checking",
+			"...",
+			"allSystems",
+			"for",
+			"system_criteria",
+			"allEntities",
+			"print",
+			"newEntityDefinition",
+			"bounds",
+			"average_fps",
+			"_average_fps",
+			"frame rate",
+			"framerate",
+			"compile_fragment",
+			"gather_files_to_compile",
+			"source_files",
+			"compile_fragment",
+			"COMPILE_FRAGMENT",
+			"SRC",
+			"GRAPHICS",
+			"fuse",
+			"lastCount",
+			"asteroidCount",
+			"lastCount",
+			"asteroidCount",
+			"score",
+			"===",
+			"}",
+			"var",
+			"vx",
+			"var",
+			";",
+			"for",
+			"//",
+			"asteroidCount",
+			"EnterFrame",
+			"onHit",
+			"GUID",
+			"HUID",
+			"UID",
+			"uid",
+			"Crafty",
+			".e(",
+			"asteroid",
+			"small",
+			"image",
+			"scope",
+			"build",
+			"Access-Control-Allow-Headers",
+			"HV_HTTP_PROXY",
+			"purchaseCompleteHandler",
+			"getOutfitInfo",
+			"webserviceBase",
+			"<<<<<<<",
+			"session",
+			"<<<<<<<",
+			"<<<",
+			"pick",
+			"i",
+			" => '',",
+			"main_game_atlas/vertical-lightning4.png",
+			"user",
+			"pick",
+			"node",
+			"<<<<<<<",
+			"JavaScriptTreeEvaluator",
+			"LangIntel",
+			"NodeJSTreeEvaluator",
+			"JavaScriptTreeEvaluator",
+			"window",
+			"\"",
+			"domain",
+			"pick",
+			"colour",
+			"color",
+			"high",
+			"wut",
+			"res",
+			"render_file_path",
+			"render_image_from_file",
+			"render_image",
+			"except",
+			"sys.",
+			"os.",
+			"close",
+			"Achievenator",
+			"friends",
+			"@user",
+			"\"",
+			"user_secret",
+			"header",
+			"concat",
+			"authenticator",
+			"helpers",
+			"16",
+			"ProfileDefinition",
+			"console.log",
+			") =>",
+			"access_token_url"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"==",
+			"",
+			"#",
+			" $1=$1_;",
+			"[Test(async)]",
+			"Async.asyncHandler(this, ",
+			"$1[Test]\\n$1$2"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"equi",
+				"web/services/asset/equip.py"
+			],
+			[
+				"lang_ja",
+				"komodo/codeintel2/lang_javascript.py"
+			],
+			[
+				"lang_",
+				"_development/Temp/reference/lang_nodejs.py"
+			],
+			[
+				"ci",
+				"_development/apicatalogs/xjsfl.cix"
+			],
+			[
+				"cix",
+				"apicatalogs/jsfl.cix"
+			],
+			[
+				"",
+				"package.json"
+			],
+			[
+				"achie",
+				"configuration/achievenator/achievenator.py"
+			],
+			[
+				"amt",
+				"client/lib_core/test/lib/assetmanager/AssetManagerTest.as"
+			],
+			[
+				"ttd",
+				"client/lib_core/test/lib/math/triangulator/delaunay/structure/TriangulationTestData.as"
+			],
+			[
+				"spat",
+				"client/lib_core/test/lib/math/triangulator/delaunay/structure/SpatialHashTest.as"
+			],
+			[
+				"mockactorserverclienttest",
+				"client/lib_core/test/world/server/MockActorServerClientTest.as"
+			],
+			[
+				"vertexmod",
+				"client/lib_core/test/world/area/model/VertexModelTest.as"
+			],
+			[
+				"linetes",
+				"client/lib_core/test/world/area/geom/line/LineTest.as"
+			],
+			[
+				"tilerte",
+				"client/lib_core/test/lib/graphic/tiler/TilerTest.as"
+			],
+			[
+				"nodejs",
+				"python/komodo/codeintel2/lang_nodejs.py"
+			],
+			[
+				"tree",
+				"tree_perl.py"
+			],
+			[
+				"man",
+				"manager.py"
+			],
+			[
+				"intel",
+				"langintel.py"
+			],
+			[
+				"langin",
+				"/Applications/Komodo IDE.app/Contents/MacOS/python/komodo/langinfo.py"
+			],
+			[
+				"la",
+				"langintel.py"
+			],
+			[
+				"lang",
+				"langintel.py"
+			],
+			[
+				"ma",
+				"manager.py"
+			],
+			[
+				"cit",
+				"citadel.py"
+			],
+			[
+				"buff",
+				"buffer.py"
+			],
+			[
+				"da",
+				"database/database.py"
+			],
+			[
+				"data",
+				"database/database.py"
+			],
+			[
+				"stag",
+				"src/glasgowmafia/godzilla/sys/render/Stage3DRenderSystem.as"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true
+}
