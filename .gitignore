@@ -1,3 +1,6 @@
 redist/
 tiny_world.sublime-project
 tiny_world.sublime-workspace
+dist/
+!dist/*/*.tar.gz
+!dist/*/*.zip
