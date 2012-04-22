@@ -40,7 +40,7 @@ task :create_osx => [:create_love] do
     `cp README.md dist/osx`
     `cp dist/love/#{NAME}.love dist/osx/#{NAME}.app/Contents/Resources`
     puts "Creating OSX archive"
-    `cd dist/osx;zip -r #{NAME}-osx.zip #{NAME}.app README.md`
+    `cd dist/osx;tar -cvzf #{NAME}-osx.tar.gz #{NAME}.app README.md`
 end
 
 def create_win(type)
