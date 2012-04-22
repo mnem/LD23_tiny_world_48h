@@ -133,6 +133,7 @@ M.print = print
 -- entities: hash (entity, componentInstances)
 --   componentInstances: hash (componentName, componentInstance)
 local entities = {}
+local deadEntities = {}
 
 -- systems: hash (group, groupSystems)
 --   groupSystems: array
@@ -271,14 +272,34 @@ function M.removeSystem(group, name)
     end
 end
 
+local function destroyDeadEntities()
+    for entity, _ in pairs(deadEntities) do
+        -- Wonder if we should teardown it's components?
+        for group, groupSystems in pairs(systems) do
+            for i, groupSystem in ipairs(groupSystems) do
+                for j, systemEntity in ipairs(groupSystem.entities) do
+                    if entity == systemEntity then
+                        table.remove(groupSystem.entities, j)
+                        groupSystem.entityMembership[entity] = nil
+                    end
+                end
+            end
+        end
+        entities[entity] = nil
+    end
+    deadEntities = {}
+end
+
 -- Updates a system if group and name are specified. If
 -- only group is specified, updates all systems in that group
 function M.updateSystem(group, name)
+    destroyDeadEntities()
     if group == nil then
         -- Update everything
         for group, systemsGroup in pairs(systems) do
             for i, system in ipairs(systemsGroup) do
                 system.processor(system.entities, M)
+                destroyDeadEntities()
             end
         end
     elseif name == nil then
@@ -286,6 +307,7 @@ function M.updateSystem(group, name)
         if systems[group] ~= nil then
             for i, system in ipairs(systems[group]) do
                 system.processor(system.entities, M)
+                destroyDeadEntities()
             end
         end
     elseif systems[group] ~= nil then
@@ -293,6 +315,7 @@ function M.updateSystem(group, name)
         for i, system in ipairs(systems[group]) do
             if system.name == name then
                 system.processor(system.entities, M)
+                destroyDeadEntities()
                 return
             end
         end
@@ -327,7 +350,12 @@ function M.systemEntityCount()
     for groupName, groupSystems in pairs(systems) do
         counts[groupName] = {}
         for i, system in ipairs(groupSystems) do
-            counts[groupName][system.name] = #system.entities
+            counts[groupName][system.name] = 0
+            for j, entity in ipairs(system.entities) do
+                if deadEntities[entity] == nil then
+                    counts[groupName][system.name] = counts[groupName][system.name] + 1
+                end
+            end
         end
     end
 
@@ -449,18 +477,7 @@ function M.removeEntityComponents(entity, ...)
 end
 
 function M.destroyEntity(entity)
-    -- Wonder if we should teardown it's components?
-    for group, groupSystems in pairs(systems) do
-        for i, groupSystem in ipairs(groupSystems) do
-            for j, systemEntity in ipairs(groupSystem.entities) do
-                if entity == systemEntity then
-                    table.remove(groupSystem.entities, j)
-                    groupSystem.entityMembership[entity] = nil
-                end
-            end
-        end
-    end
-    entities[entity] = nil
+    deadEntities[entity] = true
 end
 
 -- Returns an array containing all entities with at least the
@@ -491,7 +508,9 @@ function M.entityCount()
     local totalCount = 0
 
     for entity, componentInstances in pairs(entities) do
-        totalCount = totalCount + 1
+        if deadEntities[entity] == nil then
+            totalCount = totalCount + 1
+        end
     end
 
     return totalCount

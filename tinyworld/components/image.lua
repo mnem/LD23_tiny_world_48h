@@ -12,16 +12,6 @@ function M.factory()
         ky = 0,
         r  = 0,
         colorMode = 'replace',
-        red = 0,
-        green = 0,
-        blue = 0,
-        alpha = 255,
-        setColor = function(self, r, g, b, a)
-                self.red = r or self.red
-                self.green = g or self.green
-                self.blue = b or self.blue
-                self.alpha = a or self.alpha
-        end,
     }
 end
 

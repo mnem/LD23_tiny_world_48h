@@ -4,6 +4,7 @@ M.components = {
     'position',
     'image',
     'background',
+    'color',
 }
 
 M.priority = 1500
@@ -11,8 +12,8 @@ M.priority = 1500
 function M.processor(entities, lef)
     love.graphics.setColorMode('modulate')
     for i, entity in ipairs(entities) do
-        local pos, img = lef.entityComponents(entity, 'position', 'image')
-        love.graphics.setColor(img.red, img.green, img.blue, img.alpha)
+        local pos, img, c = lef.entityComponents(entity, 'position', 'image', 'color')
+        love.graphics.setColor(c.red, c.green, c.blue, c.alpha)
         love.graphics.draw(img.image, pos.x, pos.y)
 
         if pos.x > 0 then

@@ -19,43 +19,47 @@ else
         love.graphics.setBackgroundColor(46, 36, 113, 255)
 
         local backgroundClouds = love.graphics.newImage('assets/images/cloud_back.png')
-        local backimg, vel
-        backimg,vel = lef.addEntityComponents('bg2', 'image', 'linearvelocity', 'position', 'background')
+        local backimg, vel, pos, c
+        backimg, vel, pos, c = lef.addEntityComponents('bg2', 'image', 'linearvelocity', 'position', 'color', 'background')
         backimg.image = backgroundClouds
         backimg.colorMode = 'modulate'
-        backimg:setColor(9, 110, 74, 80)
+        c:setColor(9, 110, 74, 80)
         vel:setSpeed(-13, 0)
+        pos.x = 800 * math.random()
 
-        backimg, vel = lef.addEntityComponents('bg0', 'image', 'linearvelocity', 'position', 'background')
+        backimg, vel, pos, c = lef.addEntityComponents('bg0', 'image', 'linearvelocity', 'position', 'color', 'background')
         backimg.image = backgroundClouds
         backimg.colorMode = 'modulate'
-        backimg:setColor(31, 25, 77, 100)
+        c:setColor(255 * math.random(), 255 * math.random(), 255 * math.random(), 200)
         vel:setSpeed(0, 3)
+        pos.y = 600 * math.random()
 
-        backimg,vel = lef.addEntityComponents('bg1', 'image', 'linearvelocity', 'position', 'background')
+        backimg, vel, pos, c = lef.addEntityComponents('bg1', 'image', 'linearvelocity', 'position', 'color', 'background')
         backimg.image = backgroundClouds
         backimg.colorMode = 'modulate'
-        backimg:setColor(67, 10, 49, 100)
+        c:setColor(67, 10, 49, 100)
         vel:setSpeed(7, 0)
+        pos.x = 800 * math.random()
     end
 
     local function initSpaceDust()
         local dust = love.graphics.newImage('assets/images/space_dust.png')
         local img, pos, vel, sd
         for i=1, 700 do
-            img, pos, vel, sd = lef.addEntityComponents(
+            img, pos, vel, sd, c = lef.addEntityComponents(
                 'dust'..i,
                 'image',
                 'position',
                 'linearvelocity',
                 'spacedust',
+                'color',
                 'accrete')
             img.image = dust
             pos.x = 800 * math.random()
             pos.y = 600 * math.random()
             vel.dx = 20 * math.random() - 10
             vel.dy = 20 * math.random() - 10
-            sd.dustType = math.floor((#spacedust.COLORS - 1) * math.random()) + 1
+            c:setColor(55, 55, 55)
         end
     end
 

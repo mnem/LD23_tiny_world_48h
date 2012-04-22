@@ -1,9 +1,16 @@
 local M = {}
 
+local bornSound = love.audio.newSource('assets/sounds/planet_born.wav', 'static')
+local accreteSound = love.audio.newSource('assets/sounds/accrete.wav', 'static')
+accreteSound:setLooping(true)
+accreteSound:setVolume(0.5)
+
+
 M.components = {
     'position',
     'linearvelocity',
-    'accrete'
+    'spacedust',
+    'accrete',
 }
 
 local PLANET_RADIUS = 24 * 24
@@ -12,64 +19,74 @@ local MAX_S = 20
 local ACCEL = 0.8
 local PLANET_DUST_NEEDED = 50
 
-local function countCloseDust(lef, close)
-    local dusts = {}
-    local sd
-    for i, closeEntity in ipairs(close) do
-        sd = lef.entityComponents(closeEntity, 'spacedust')
-        dusts[sd.dustType] = dusts[sd.dustType] or 0
-        dusts[sd.dustType] = dusts[sd.dustType] + 1
-    end
+M.bitsLeft = 0
 
-    local winner = nil
-    local winnerCount = 0
-    for type, count in pairs(dusts) do
-        if winner == nil or count > winnerCount then
-            winner = type
-            winnerCount = count
+local COLORS = {
+    {103, 168, 244, 24},
+    {174, 34, 24, 32},
+    {96, 150, 44, 20},
+    {118, 150, 146, 15},
+}
+
+local doAccretion = false
+
+local function allowAccretion(allow)
+    if allow ~= doAccretion then
+        doAccretion = allow
+        if doAccretion then
+            if accreteSound:isPaused() then
+                accreteSound:resume()
+            else
+                accreteSound:play()
+            end
+        else
+            accreteSound:pause()
         end
     end
-
-    return winner, winnerCount
 end
 
-local function spawnPlanet(lef, winner, close, x, y)
-    -- New planet!
-    local pos, pln, vel = lef.addEntityComponents({}, 'position', 'planet', 'linearvelocity')
+function love.mousepressed()
+    allowAccretion(true)
+end
+
+function love.mousereleased()
+    allowAccretion(false)
+end
+
+local function spawnPlanet(lef, close, x, y)
+    local pos, pln, vel, c = lef.addEntityComponents({}, 'position', 'planet', 'linearvelocity', 'color')
     pos.x = x
     pos.y = y
-    pln.planetType = winner
     vel.dx = 5 * math.random() - 2.5
     vel.dy = 5 * math.random() - 2.5
-    vel.vrx = -vel.dx / 20
-    vel.vry = -vel.dy / 20
+    pln.vrx = vel.dx / 20
+    pln.vry = -vel.dy / 20
+
+    local pCol = COLORS[math.floor((#COLORS - 1) * math.random()) + 1]
+    c:setColor(pCol[1], pCol[2], pCol[3])
+    pln:setRadius(pCol[4])
 
     -- Let the planet eat all the dust
-    local trg, sd, sdpos
     for i, dust in ipairs(close) do
-        trg, sd, sdpos = lef.addEntityComponents(dust, 'orbittarget', 'spacedust', 'position')
-        if pln.planetType ~= sd.dustType then
-            lef.removeEntityComponents(dust, 'accrete')
-            trg.target = pos
-            trg.radiusradius = 15 * 15
-            sdpos.x = pos.x
-            sdpos.y = pos.y
-            sd.alpha = 80
-        else
-            lef.destroyEntity(dust)
-        end
+        lef.destroyEntity(dust)
     end
+
+    local fade, c = lef.addEntityComponents({}, 'tween', 'color', 'fadeout')
+    c:setColor(255,255,255, 100)
+    bornSound:play()
 end
 
 function M.processor(entities, lef)
-    if love.mouse.isDown('l') then
+    M.bitsLeft = #entities
+    local g, c
+    if doAccretion then
         local close = {}
         local pos, vel
         local mx = love.mouse.getX()
         local my = love.mouse.getY()
 
         for i, entity in ipairs(entities) do
-            pos, vel = lef.entityComponents(entity, 'position', 'linearvelocity')
+            pos, vel, sd, c = lef.entityComponents(entity, 'position', 'linearvelocity', 'spacedust', 'color')
 
             -- Work out the entities distance from the mouse
             x = pos.x - mx
@@ -94,16 +111,26 @@ function M.processor(entities, lef)
                         vel.dy = vel.dy + ACCEL
                         if vel.dy > MAX_S then vel.dy = MAX_S end
                     end
+
+                    g = 55 + 100 - ((d - PLANET_RADIUS) / (INFLUENCE_RADIUS - PLANET_RADIUS) * 100)
+                    c:setColor(g, g, g)
                 else
+                    c:setColor(255, 255, 255)
                     table.insert(close, entity)
                 end
+            else
+                c:setColor(55, 55, 55)
             end
         end
 
-        -- See if there is enough of any one type to form a planet
-        local winner, winnerCount = countCloseDust(lef, close)
-        if winnerCount > PLANET_DUST_NEEDED then
-            spawnPlanet(lef, winner, close, mx, my)
+        if #close > PLANET_DUST_NEEDED then
+            spawnPlanet(lef, close, mx, my)
+            allowAccretion(false)
+        end
+    else
+        for i, entity in ipairs(entities) do
+            c = lef.entityComponents(entity, 'color')
+            c:setColor(55, 55, 55)
         end
     end
 end
