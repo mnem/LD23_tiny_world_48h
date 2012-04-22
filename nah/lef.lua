@@ -192,7 +192,7 @@ local function updateSystemsWithEntity(entity)
             end
 
             -- Add it if it belongs
-            if  belongs then
+            if belongs and system.entityMembership[entity] == nil then
                 table.insert(system.entities, entity)
                 system.entityMembership[entity] = true
             end
@@ -450,20 +450,17 @@ end
 
 function M.destroyEntity(entity)
     -- Wonder if we should teardown it's components?
-    -- local entityComponents = entities[entity] or {}
-    entities[entity] = nil
-
     for group, groupSystems in pairs(systems) do
         for i, groupSystem in ipairs(groupSystems) do
             for j, systemEntity in ipairs(groupSystem.entities) do
                 if entity == systemEntity then
                     table.remove(groupSystem.entities, j)
                     groupSystem.entityMembership[entity] = nil
-                    break
                 end
             end
         end
     end
+    entities[entity] = nil
 end
 
 -- Returns an array containing all entities with at least the

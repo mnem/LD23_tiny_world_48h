@@ -3,8 +3,8 @@ local M = {}
 
 function M.factory()
      return {
-        dustType = 1,
-        alpha = 255,
+        target = nil,
+        radiusradius = 24*24,
     }
 end
 

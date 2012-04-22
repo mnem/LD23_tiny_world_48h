@@ -42,7 +42,7 @@ else
     local function initSpaceDust()
         local dust = love.graphics.newImage('assets/images/space_dust.png')
         local img, pos, vel, sd
-        for i=1, 2000 do
+        for i=1, 700 do
             img, pos, vel, sd = lef.addEntityComponents(
                 'dust'..i,
                 'image',
