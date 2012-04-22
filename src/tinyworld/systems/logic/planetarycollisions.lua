@@ -63,10 +63,16 @@ function M.processor(entities, lef)
         end
     end
 
-    local text, pos, c = lef.addEntityComponents("ui planets destroyed", 'uitext', 'position', 'color')
-    text.text = M.planetsDestroy.." tiny worlds annihilated."
+    local text, pos, c = lef.addEntityComponents("ui planets exist", 'uitext', 'position', 'color')
+    text.text = #entities.." tiny worlds created."
     pos.x = 10
     pos.y = 30
+    c:setColor(73, 185, 67)
+
+    text, pos, c = lef.addEntityComponents("ui planets destroyed", 'uitext', 'position', 'color')
+    text.text = M.planetsDestroy.." tiny worlds annihilated."
+    pos.x = 10
+    pos.y = 50
     c:setColor(200, 53, 40)
 end
 
