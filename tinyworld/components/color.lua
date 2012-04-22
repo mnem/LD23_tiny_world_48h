@@ -11,6 +11,13 @@ function Class:setColor(r, g, b, a)
     self.alpha = a or self.alpha
 end
 
+function Class:setGray(g, a)
+    self.red = g or self.red
+    self.green = g or self.red
+    self.blue = g or self.red
+    self.alpha = a or self.alpha
+end
+
 function M.factory()
     local instance = {
         red = 0,

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"setCol",
+				"love.graphics.setColor"
+			],
+			[
 				"rec",
 				"love.graphics.rectangle"
 			],
@@ -26,10 +30,6 @@
 			[
 				"setCo",
 				"love.graphics.getColor"
-			],
-			[
-				"setCol",
-				"love.graphics.setColorMode"
 			],
 			[
 				"file",
@@ -396,18 +396,10 @@
 	"buffers":
 	[
 		{
-			"file": "tinyworld/systems/render/background.lua",
+			"file": "conf.lua",
 			"settings":
 			{
-				"buffer_size": 844,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/systems/render/planets.lua",
-			"settings":
-			{
-				"buffer_size": 1443,
+				"buffer_size": 1501,
 				"line_ending": "Unix"
 			}
 		},
@@ -415,55 +407,7 @@
 			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 2960,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/tween.lua",
-			"settings":
-			{
-				"buffer_size": 150,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/systems/logic/updatelinearvelocity.lua",
-			"settings":
-			{
-				"buffer_size": 638,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/log.lua",
-			"settings":
-			{
-				"buffer_size": 399,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/systems/logic/planetarycollisions.lua",
-			"settings":
-			{
-				"buffer_size": 1001,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/orbittarget.lua",
-			"settings":
-			{
-				"buffer_size": 139,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/systems/render/linearfadetween.lua",
-			"settings":
-			{
-				"buffer_size": 634,
+				"buffer_size": 2675,
 				"line_ending": "Unix"
 			}
 		},
@@ -471,63 +415,7 @@
 			"file": "tinyworld/systems/logic/accretion.lua",
 			"settings":
 			{
-				"buffer_size": 3825,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/planet.lua",
-			"settings":
-			{
-				"buffer_size": 536,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "nah/lef.lua",
-			"settings":
-			{
-				"buffer_size": 22662,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/color.lua",
-			"settings":
-			{
-				"buffer_size": 453,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/spacedust.lua",
-			"settings":
-			{
-				"buffer_size": 87,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/image.lua",
-			"settings":
-			{
-				"buffer_size": 251,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/systems/render/spacedust.lua",
-			"settings":
-			{
-				"buffer_size": 474,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tinyworld/components/linearvelocity.lua",
-			"settings":
-			{
-				"buffer_size": 336,
+				"buffer_size": 5967,
 				"line_ending": "Unix"
 			}
 		}
@@ -704,12 +592,34 @@
 	},
 	"file_history":
 	[
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/uishapes.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/tween.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/lineartween.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/planetarycollisions.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/main.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/shape.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/color.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/accretion.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/lineartween.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/shapes.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/background.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/planets.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/uitext.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/updatelinearvelocity.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/log.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/orbittarget.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/uitext.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/planet.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/nah/lef.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/spacedust.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/image.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/spacedust.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/linearvelocity.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/linearfadetween.lua",
+		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/readout.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/linearalphatween.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/fadein.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/fadeinarea.lua",
-		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/linearvelocity.lua",
-		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/nah/lef.lua",
-		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/accretion.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/accrue.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic/followmouse.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/smilies.lua",
@@ -718,13 +628,10 @@
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/tinyworld/systems/render/drawbackground.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/coloredimage.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/renderable.lua",
-		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/image.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render/drawcoloredimages.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components/spacebackground.lua",
-		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/main.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/nah/tests/lef.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/render.lua",
-		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/log.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/components.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems.lua",
 		"/Users/mnem/Developer/github/mnem/LD23_tiny_world_48h/tinyworld/systems/logic.lua",
@@ -812,26 +719,7 @@
 		"/Users/mnem/.rvm/log/ruby-1.9.3-p125/yaml/configure.log",
 		"/Users/mnem/.rvm/log/ruby-1.9.3-p125/patch.apply.xcode-debugopt-fix-r34840.log",
 		"/Users/mnem/.bash_profile",
-		"/Volumes/huzutech_vault/scholastic_client/client/src/scholastic/modules/personalroombuilder/controller/webservice/ProcessOwnedAssetsCommand.as",
-		"/Volumes/huzutech_vault/scholastic_client/client/lib/huzuvirtual/features/personalroom/modulefeature/model/PersonalRoomAsset.as",
-		"/Volumes/huzutech_vault/scholastic_client/client/app_horrible_application/src/scholastic/applicationfeatures/horribleconfiguration/embedded/default_personalroom.json",
-		"/Volumes/huzutech_vault/scholastic_client/client/bin/post_agile_core_resources/index.js",
-		"/Volumes/Tiled 0.8.0/examples/sewers.tmx",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entities/score_entity.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/scene_main.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/components/asteroid.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entities/player_entity.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/public/js/game.js",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/components/components_creation",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/components/asteroid_component.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entity_score.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/public/js/game copy.js",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/Rakefile",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/entity_player.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/init.coffee",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/public/index.html",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/init.coffeex",
-		"/Users/mnem/Developer/github/collaborations/mnem/shepherd/prototypes/flocking/coffee/main.coffee"
+		"/Volumes/huzutech_vault/scholastic_client/client/src/scholastic/modules/personalroombuilder/controller/webservice/ProcessOwnedAssetsCommand.as"
 	],
 	"find":
 	{
@@ -860,6 +748,11 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"32",
+			"fade",
+			"PLANET_DUST_NEEDED",
+			"tRr",
+			"rr",
 			"dieSoundSource",
 			"fadeTime",
 			"pos.y",
@@ -982,12 +875,7 @@
 			"\"",
 			"domain",
 			"pick",
-			"colour",
-			"color",
-			"high",
-			"wut",
-			"res",
-			"render_file_path"
+			"colour"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1012,23 +900,23 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "tinyworld/systems/render/background.lua",
+					"file": "conf.lua",
 					"settings":
 					{
-						"buffer_size": 844,
+						"buffer_size": 1501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								462,
-								462
+								1454,
+								1454
 							]
 						],
 						"settings":
@@ -1089,25 +977,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 26.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tinyworld/systems/render/planets.lua",
+					"file": "main.lua",
 					"settings":
 					{
-						"buffer_size": 1443,
+						"buffer_size": 2675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								874,
-								874
+								2606,
+								2606
 							]
 						],
 						"settings":
@@ -1168,574 +1056,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 281.0,
+						"translation.y": 1014.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "main.lua",
-					"settings":
-					{
-						"buffer_size": 2960,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1232,
-								1232
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 351.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "tinyworld/components/tween.lua",
-					"settings":
-					{
-						"buffer_size": 150,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "tinyworld/systems/logic/updatelinearvelocity.lua",
-					"settings":
-					{
-						"buffer_size": 638,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								603,
-								603
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "tinyworld/log.lua",
-					"settings":
-					{
-						"buffer_size": 399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								270,
-								270
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "tinyworld/systems/logic/planetarycollisions.lua",
-					"settings":
-					{
-						"buffer_size": 1001,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14,
-								94
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "tinyworld/components/orbittarget.lua",
-					"settings":
-					{
-						"buffer_size": 139,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "tinyworld/systems/render/linearfadetween.lua",
-					"settings":
-					{
-						"buffer_size": 634,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
 					"file": "tinyworld/systems/logic/accretion.lua",
 					"settings":
 					{
-						"buffer_size": 3825,
+						"buffer_size": 5967,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1078,
-								1078
+								2872,
+								2872
 							]
 						],
 						"settings":
@@ -1796,550 +1135,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 423.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "tinyworld/components/planet.lua",
-					"settings":
-					{
-						"buffer_size": 536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								222,
-								222
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "nah/lef.lua",
-					"settings":
-					{
-						"buffer_size": 22662,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13762,
-								13762
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6302.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "tinyworld/components/color.lua",
-					"settings":
-					{
-						"buffer_size": 453,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32,
-								443
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "tinyworld/components/spacedust.lua",
-					"settings":
-					{
-						"buffer_size": 87,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "tinyworld/components/image.lua",
-					"settings":
-					{
-						"buffer_size": 251,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								231,
-								231
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage",
-							"tab_size": 8,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "tinyworld/systems/render/spacedust.lua",
-					"settings":
-					{
-						"buffer_size": 474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								392,
-								392
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "tinyworld/components/linearvelocity.lua",
-					"settings":
-					{
-						"buffer_size": 336,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/SublimeLove/Love.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1731.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

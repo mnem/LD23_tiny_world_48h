@@ -8,16 +8,18 @@ M.components = {
     'color',
 }
 
-M.priority = 1100
+M.priority = 900
 
 local function drawPlanet(x, y, pln, c)
     local r, rOver2
     love.graphics.setColor(c.red, c.green, c.blue, c.alpha)
-    love.graphics.circle('fill', x, y, pln.radius, 16)
+    love.graphics.setLine(2, "smooth")
+    love.graphics.circle('fill', x, y, pln.radius, 20)
+    love.graphics.circle('line', x, y, pln.radius, 20)
     r = pln.radius
     rOver2 = r / 2
     love.graphics.setLine(1, "smooth")
-    love.graphics.setColor(200, 200, 200, 25)
+    love.graphics.setColor(200, 200, 200, 45)
     for i, lat in ipairs(pln.lats) do
         love.graphics.line(
             x, y - r,

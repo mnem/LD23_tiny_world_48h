@@ -1,4 +1,5 @@
 local M = {}
+local lef = require 'nah.lef'
 
 local bornSound = love.audio.newSource('assets/sounds/planet_born.wav', 'static')
 local accreteSound = love.audio.newSource('assets/sounds/accrete.wav', 'static')
@@ -17,14 +18,23 @@ local PLANET_RADIUS = 24 * 24
 local INFLUENCE_RADIUS = 110 * 110
 local MAX_S = 20
 local ACCEL = 0.8
-local PLANET_DUST_NEEDED = 50
 
 M.bitsLeft = 0
+M.planetsLeft = 0
+M.planetsFormed = 0
+M.PLANET_DUST_NEEDED = 50
 
 local COLORS = {
     {103, 168, 244, 24},
+    {103, 168, 244, 24},
+    {103, 168, 244, 24},
+    {103, 168, 244, 24},
+    {174, 34, 24, 32},
     {174, 34, 24, 32},
     {96, 150, 44, 20},
+    {96, 150, 44, 20},
+    {118, 150, 146, 15},
+    {118, 150, 146, 15},
     {118, 150, 146, 15},
 }
 
@@ -33,15 +43,19 @@ local doAccretion = false
 local function allowAccretion(allow)
     if allow ~= doAccretion then
         doAccretion = allow
-        if doAccretion then
-            if accreteSound:isPaused() then
-                accreteSound:resume()
-            else
-                accreteSound:play()
-            end
-        else
-            accreteSound:pause()
+        if not doAccretion then
+            lef.destroyEntity("accretion cur")
+            lef.destroyEntity("accretion max")
         end
+        -- if doAccretion then
+        --     if accreteSound:isPaused() then
+        --         accreteSound:resume()
+        --     else
+        --         accreteSound:play()
+        --     end
+        -- else
+        --     accreteSound:pause()
+        -- end
     end
 end
 
@@ -63,7 +77,7 @@ local function spawnPlanet(lef, close, x, y)
     pln.vry = -vel.dy / 20
 
     local pCol = COLORS[math.floor((#COLORS - 1) * math.random()) + 1]
-    c:setColor(pCol[1], pCol[2], pCol[3])
+    c:setColor(pCol[1], pCol[2], pCol[3], 200)
     pln:setRadius(pCol[4])
 
     -- Let the planet eat all the dust
@@ -71,13 +85,40 @@ local function spawnPlanet(lef, close, x, y)
         lef.destroyEntity(dust)
     end
 
-    local fade, c = lef.addEntityComponents({}, 'tween', 'color', 'fadeout')
-    c:setColor(255,255,255, 100)
+    local c, pos, shp, tween = lef.addEntityComponents({}, 'color', 'position', 'shape', 'tween', 'ui')
+    c:setColor(255,255,255)
+    shp.params = {800, 600}
+    tween:setTween('color', 'alpha', 100, 0, 0.5, 0, function(entity)
+        lef.destroyEntity(entity)
+    end)
+
+    bornSound:stop()
+    bornSound:rewind()
     bornSound:play()
+
+    M.planetsFormed = M.planetsFormed + 1
+
+    lef.destroyEntity("ui planet forming help")
 end
 
 function M.processor(entities, lef)
     M.bitsLeft = #entities
+    M.planetsLeft = math.floor(M.bitsLeft / M.PLANET_DUST_NEEDED)
+    local text, pos, c = lef.addEntityComponents("ui planets left", 'uitext', 'position', 'color')
+    text.text = M.planetsLeft.." tiny worlds remaining to be formed."
+    pos.x = 10
+    pos.y = 10
+    c:setColor(200, 183, 85)
+
+    if M.planetsLeft < 1 then
+        local text, pos, c = lef.addEntityComponents("end message", 'uitext', 'position', 'color')
+        text.align = 'center'
+        text.text = "Well done! You have created a tiny planetary system! You totally ROCK! Um. I couldn't think of an ending though. Press ESC to quit, or just watch planets collide."
+        pos.x = 400 - text.width / 2
+        pos.y = 250
+        c:setColor(200, 183, 85)
+    end
+
     local g, c
     if doAccretion then
         local close = {}
@@ -123,9 +164,27 @@ function M.processor(entities, lef)
             end
         end
 
-        if #close > PLANET_DUST_NEEDED then
+        if #close > M.PLANET_DUST_NEEDED then
             spawnPlanet(lef, close, mx, my)
             allowAccretion(false)
+        else
+            local r = 24
+            local norm = #close / M.PLANET_DUST_NEEDED
+            local shape, pos, c = lef.addEntityComponents("accretion cur", 'shape', 'position', 'color', 'ui')
+            shape.type = 'circle'
+            shape.params = {norm * r}
+            c:setColor(159, 255 * norm, 41, 100)
+            pos.x = mx
+            pos.y = my
+
+            local shape, pos, c = lef.addEntityComponents("accretion max", 'shape', 'position', 'color', 'ui')
+            shape.type = 'circle'
+            shape.fill = false
+            shape.line = true
+            shape.params = {r}
+            c:setColor(159, 255, 41, 100)
+            pos.x = mx
+            pos.y = my
         end
     else
         for i, entity in ipairs(entities) do
