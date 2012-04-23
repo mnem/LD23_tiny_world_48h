@@ -23,6 +23,7 @@ M.bitsLeft = 0
 M.planetsLeft = 0
 M.planetsFormed = 0
 M.PLANET_DUST_NEEDED = 50
+M.gameOver = false
 
 local COLORS = {
     {103, 168, 244, 24},
@@ -67,16 +68,16 @@ function love.mousereleased()
     allowAccretion(false)
 end
 
-local function spawnPlanet(lef, close, x, y)
-    local pos, pln, vel, c = lef.addEntityComponents({}, 'position', 'planet', 'linearvelocity', 'color')
+local function spawnPlanet(lef, close, x, y, pCol, velx, vely, prx, pry, indestructable, name)
+    local pos, pln, vel, c = lef.addEntityComponents(name or {}, 'position', 'planet', 'linearvelocity', 'color')
     pos.x = x
     pos.y = y
-    vel.dx = 5 * math.random() - 2.5
-    vel.dy = 5 * math.random() - 2.5
-    pln.vrx = vel.dx / 20
-    pln.vry = -vel.dy / 20
+    vel.dx = velx or 5 * math.random() - 2.5
+    vel.dy = vely or 5 * math.random() - 2.5
+    pln.vrx = prx or vel.dx / 20
+    pln.vry = pry or -vel.dy / 20
+    pln.indestructable = indestructable or false
 
-    local pCol = COLORS[math.floor((#COLORS - 1) * math.random()) + 1]
     c:setColor(pCol[1], pCol[2], pCol[3], 200)
     pln:setRadius(pCol[4])
 
@@ -110,13 +111,17 @@ function M.processor(entities, lef)
     pos.y = 10
     c:setColor(200, 183, 85)
 
-    if M.planetsLeft < 1 then
+    if M.planetsLeft < 1 and not M.gameOver then
+        M.gameOver = true
         local text, pos, c = lef.addEntityComponents("end message", 'uitext', 'position', 'color')
         text.align = 'center'
-        text.text = "Well done! You have created a tiny planetary system! You totally ROCK! Um. I couldn't think of an ending though. Press ESC to quit, or just watch planets collide."
+        text.width = 300
+        text.text = "Well done! You have created a tiny solar system! You totally ROCK! Um. I couldn't think of an ending though. Press ESC to quit, or just watch planets collide."
         pos.x = 400 - text.width / 2
-        pos.y = 250
-        c:setColor(200, 183, 85)
+        pos.y = 450
+        c:setColor(156, 255, 201)
+
+        spawnPlanet(lef, {}, 400, 300, {255, 244, 53, 50}, 0, 0, 2, 0, true, "sun")
     end
 
     local g, c
@@ -165,7 +170,7 @@ function M.processor(entities, lef)
         end
 
         if #close > M.PLANET_DUST_NEEDED then
-            spawnPlanet(lef, close, mx, my)
+            spawnPlanet(lef, close, mx, my, COLORS[math.floor((#COLORS - 1) * math.random()) + 1])
             allowAccretion(false)
         else
             local r = 24

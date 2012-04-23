@@ -18,6 +18,7 @@ function M.factory()
         longs = {},
         vrx = 0,
         vry = 0,
+        indestructable = false,
     }
     setmetatable( instance, Class_mt )
 

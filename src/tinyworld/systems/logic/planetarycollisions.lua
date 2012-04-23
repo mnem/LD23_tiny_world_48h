@@ -21,9 +21,13 @@ function M.processor(entities, lef)
             d = math.sqrt(dx * dx + dy * dy)
             if d < (pln.radius + tPln.radius) then
                 -- collide
-                lef.destroyEntity(entity)
-                lef.destroyEntity(entities[j])
-                M.planetsDestroy =  M.planetsDestroy + 1
+                if not pln.indestructable then
+                    lef.destroyEntity(entity)
+                end
+                if not tPln.indestructable then
+                    lef.destroyEntity(entities[j])
+                    M.planetsDestroy =  M.planetsDestroy + 1
+                end
                 iWasHit = true
                 dieSound:stop()
                 dieSound:rewind()
@@ -31,7 +35,9 @@ function M.processor(entities, lef)
             end
         end
         if iWasHit then
-            M.planetsDestroy =  M.planetsDestroy + 1
+            if not pln.indestructable then
+                M.planetsDestroy =  M.planetsDestroy + 1
+            end
 
             local c, txPos, txt, tween = lef.addEntityComponents({}, 'color', 'position', 'uitext', 'tween')
             c:setColor(255, 0, 0)
